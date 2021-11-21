@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .about__box {
     display: flex;
     margin-top: 5rem;
@@ -13,7 +15,6 @@
             margin-right: 0;
             width: 100%;
         }
-
     }
 }
 

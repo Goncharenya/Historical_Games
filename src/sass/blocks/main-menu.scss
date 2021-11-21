@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .main-menu__header::after {
     content: "";
     position: absolute;
@@ -26,7 +28,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .main-menu__link {
     color: $textColor;
