@@ -1,0 +1,43 @@
+.about__box {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+
+    @media (max-width: 700px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-bottom: 5rem;
+
+        .about__text {
+            margin-right: 0;
+            width: 100%;
+        }
+
+    }
+}
+
+.about__text {
+    width: 50%;
+    margin-right: 35px;
+
+    p {
+        color: $textColor;
+    }
+}
+
+.about__picture {
+    width: 50%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.about__title {
+    padding: 0;
+    margin-top: 0;
+}
+

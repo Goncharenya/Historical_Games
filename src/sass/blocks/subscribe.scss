@@ -1,0 +1,29 @@
+.subscribe {
+    background: url("../img/subscrible_bg.jpg") no-repeat center/cover;
+}
+
+.subscribe__title {
+    padding-top: 80px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.subscribe__box {
+
+    padding: 0 0 80px;
+}
+
+.subscribe__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe__input {
+    border: none;
+    outline: none;
+    display: flex;
+    padding: 15px 35px;
+    width: 500px;
+    margin-right: 20px;
+}

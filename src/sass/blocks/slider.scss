@@ -1,0 +1,135 @@
+.slider__box {
+    position: relative;
+}
+
+.slider__content {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 50%;
+
+    @media (max-width: 1380px) {
+        left: 18%;
+        width: 65%;
+    }
+
+    @media (max-width: 900px) {
+        width: 82%;
+        left: 9%;
+    }
+
+    @media (max-width: 840px) {
+        display: none;
+    }
+}
+
+.slider__title {
+    font-size: 48px;
+    font-family: Poppins, sans-serif;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 11rem;
+
+    @media (max-width: 1600px) {
+        margin-bottom: 7rem;
+    }
+
+    @media (max-width: 1320px) {
+        margin-bottom: 4rem;
+        &:after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1130px) {
+        margin-bottom: 1rem;
+        margin-top: 10px;
+    }
+
+    &:after {
+        content: url("../img/icon/quotation_2.png");
+        opacity: .5;
+        position: absolute;
+        top: 44%;
+        left: 48%;
+    }
+}
+
+.slider__desc,
+.slider__desc-author {
+    //width: 80%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.slider__desc-author {
+    text-transform: uppercase;
+}
+
+.slider__navigation {
+    position: absolute;
+    top: 57%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+    @media (max-width: 1380px) {
+        width: 80%;
+        left: 10%;
+    }
+
+    @media (max-width: 900px) {
+        width: 96%;
+        left: 2%;
+    }
+
+    @media (max-width: 840px) {
+        width: 31%;
+        left: 34%;
+        top: 30%;
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.next__box,
+.prev__box {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    background: transparent;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 15px;
+        width: 15px;
+        background: transparent;
+        border-right: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+}
+
+.prev__box:after {
+    transform: rotate(135deg);
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+.next__box:after {
+    transform: rotate(-45deg);
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.slider__image img {
+    width: 100%;
+    height: auto;
+}

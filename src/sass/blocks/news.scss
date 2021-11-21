@@ -1,0 +1,113 @@
+.news__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+    @media (max-width: 900px) {
+        flex-flow: column;
+    }
+}
+
+.news__item {
+    width: 50%;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.news__title {
+    text-align: center;
+}
+
+.latest-news__head,
+.featured-events__title {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #000000;
+    line-height: 2;
+}
+
+.featured-events {
+    position: relative;
+}
+
+.featured-events__title:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: $textColor;
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+.latest-news__item {
+    display: flex;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.latest-news__data {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 138px;
+    border-radius: 50px;
+    border: 2px solid rgb(232, 232, 232);
+    background: #f7f7f7;
+    margin-right: 50px;
+    min-width: 105px;
+
+    .data__day {
+        font-family: "Poppins", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 8px;
+    }
+
+    .data__month,
+    .data__year {
+        font-family: "Poppins", sans-serif;
+        color: $textColor;
+        font-size: 14px;
+    }
+
+    .data__year {
+        margin-top: 8px;
+    }
+
+}
+
+.event__title {
+    color: $specialRed;
+    font-weight: 300;
+}
+
+.event__description {
+    color: $textColor;
+}
+
+.featured-events__image {
+    display: flex;
+}
+
+.featured-events__image {
+    margin-bottom: 40px;
+}
+
+.featured-events__image-item {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

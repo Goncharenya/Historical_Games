@@ -1,0 +1,39 @@
+.team {
+    background: $sectionColor;
+}
+
+.team__box {
+    margin-bottom: 80px;
+}
+
+.team__list {
+    @include grid;
+
+    @media (max-width: 1320px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+}
+
+.team__item {
+    display: flex;
+    flex-flow: column;
+    min-width: 270px;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    &:hover {
+        border-bottom: 1px solid $specialRed;
+    }
+
+    @media (max-width: 700px) {
+
+        border-bottom: 1px solid $specialRed;
+        padding-bottom: 20px;
+    }
+}

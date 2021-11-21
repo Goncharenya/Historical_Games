@@ -1,0 +1,29 @@
+.contact__title {
+    text-align: center;
+
+}
+
+.contact__sub-title {
+    font-size: 26px;
+    font-weight: 400;
+    color: $specialRed;
+    margin-top: 0;
+}
+
+.contact__content {
+    color: $textColor;
+    width: 80%;
+}
+
+.contact__mail {
+    color: $specialRed;
+}
+
+.contact__form {
+    display: flex;
+
+    @media (max-width: 900px) {
+        flex-flow: column;
+    }
+
+}

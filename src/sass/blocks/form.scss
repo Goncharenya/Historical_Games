@@ -1,0 +1,33 @@
+.form {
+    margin-left: 25px;
+
+    @media (max-width: 900px) {
+        margin-left: 0;
+        border-top: 1px dashed $specialRed;
+        padding-top: 20px;
+    }
+
+    input {
+        display: flex;
+        padding: 10px 15px;
+        width: 470px;
+        border: 1px solid #999999;
+        outline: none;
+        margin-bottom: 25px;
+
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+    }
+
+    .form__message {
+        resize: none;
+        width: 100%;
+        padding: 15px;
+        min-height: 158px;
+        border: 1px solid #999999;
+        outline: none;
+        margin-bottom: 25px;
+
+    }
+}

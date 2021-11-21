@@ -1,0 +1,40 @@
+.cards {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    background: $sectionColor;
+    min-height: 485px;
+    width: 269px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.cards__image {
+    width: 269px;
+    height: auto;
+}
+
+.cards__title {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 10px;
+    max-width: 270px;
+    font-weight: 400;
+}
+
+.cards__link {
+    color: #000000;
+
+    &:hover {
+        color: $specialRed;
+    }
+}
+
+.cards__btn {
+    margin-bottom: 16px;
+}
+
